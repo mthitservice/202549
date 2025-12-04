@@ -6,10 +6,13 @@ Docker Aufbau Kurs
 
 ## Modul 01 - Wiederholung
 
-Vorbereitung eines Ubuntu Betriebssystems [zum Inhalt](modul01/readme01.md)  
-Die wichtigsten Docker Befehle und Beispiele [zum Inhalt](readme-docker.md)
+📁 [Zum Modul-Verzeichnis](modul01/)  
+📖 Vorbereitung eines Ubuntu Betriebssystems [zum Inhalt](modul01/readme.md)  
+📖 Die wichtigsten Docker Befehle und Beispiele [zum Inhalt](modul01/readme-docker.md)
 
 ## Modul 02 - Dockerfile Basics
+
+📁 [Zum Modul-Verzeichnis](modul02/)
 
 Statische Website veröffentlichen mit einem Image, welches einen Webserver in sich trägt
 
@@ -21,6 +24,8 @@ Statische Website veröffentlichen mit einem Image, welches einen Webserver in s
 
 ## Modul 03 - Dockerfile Core Image
 
+📁 [Zum Modul-Verzeichnis](modul03/)
+
 Image-Aufbau von einem Core-Image und einfacher Command-Ausführung
 
 **Inhalt:**
@@ -30,6 +35,8 @@ Image-Aufbau von einem Core-Image und einfacher Command-Ausführung
 - CMD vs. ENTRYPOINT verstehen
 
 ## Modul 04 - Dockerfile Python Anwendung
+
+📁 [Zum Modul-Verzeichnis](modul04/)
 
 Image-Aufbau von einem Framework-Image und Ergänzung von Paketen bis zum Start einer eigenen Python-Anwendung
 
@@ -42,6 +49,8 @@ Image-Aufbau von einem Framework-Image und Ergänzung von Paketen bis zum Start 
 
 ## Modul 05 - Docker Compose Basics
 
+📁 [Zum Modul-Verzeichnis](modul05/)
+
 Einführung in Docker Compose mit Multi-Container-Setup
 
 **Inhalt:**
@@ -52,6 +61,9 @@ Einführung in Docker Compose mit Multi-Container-Setup
 - Grundlagen der Container-Orchestrierung
 
 ## Modul 06 - Multi-Tier Web Application
+
+📁 [Zum Modul-Verzeichnis](modul06/)  
+📖 [Zur Dokumentation](modul06/readme.md)
 
 Komplexe Multi-Container-Anwendung mit Reverse Proxy, Monitoring und TLS
 
@@ -66,8 +78,10 @@ Komplexe Multi-Container-Anwendung mit Reverse Proxy, Monitoring und TLS
 
 ## Modul 07 - GitLab Container Registry
 
-GitLab CE als Container-Registry und CI/CD-Plattform  
-[zum Inhalt](modul07/readme.md)
+📁 [Zum Modul-Verzeichnis](modul07/)  
+📖 [Zur Dokumentation](modul07/readme.md)
+
+GitLab CE als Container-Registry und CI/CD-Plattform
 
 **Inhalt:**
 
@@ -83,6 +97,9 @@ GitLab CE als Container-Registry und CI/CD-Plattform
 
 ## Modul 08 - Docker Swarm
 
+📁 [Zum Modul-Verzeichnis](modul08/)  
+📖 [Swarm-Befehlsreferenz](modul08/readme-swarm.md)
+
 Container-Orchestrierung mit Docker Swarm
 
 **Inhalt:**
@@ -91,7 +108,21 @@ Container-Orchestrierung mit Docker Swarm
 - Services im Cluster deployen
 - Skalierung und Load Balancing
 - High Availability und Failover
-- Swarm-Befehlsreferenz [zum Inhalt](modul08/readme-swarm.md)
+
+**Weiterführende Orchestrierungs-Technologien:**
+
+- 🚀 **[Kubernetes](https://kubernetes.io/)** - Industry-Standard für Container-Orchestrierung
+  - Cloud Native Computing Foundation (CNCF) Projekt
+  - Umfangreicher als Swarm, komplexere Features
+  - Große Community und Ecosystem
+  - Ideal für große, komplexe Produktionsumgebungen
+  
+- 🎯 **[Red Hat OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift)** - Enterprise Kubernetes Platform
+  - Kubernetes + zusätzliche Enterprise-Features
+  - Integrierte CI/CD, Registry, Monitoring
+  - Developer & Operations Tools
+  - Support und Security Hardening von Red Hat
+  - Ideal für regulierte Branchen und Enterprise-Umgebungen
 
 
 
