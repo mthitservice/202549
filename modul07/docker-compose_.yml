@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    container_name: gitlab
+    restart: always
+    hostname: 'localhost'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://192.168.101.127:8080'
+        registry_external_url 'http://localhost:5001'
+        registry['enable'] = true
+        registry['registry_http_addr'] = "0.0.0.0:5050"
+
+    ports:
+      - '8080:80' # Webinterface
+      - '443:443' # optional HTTPS
+      - '2222:22' # SSH Port für git
+      - '5050:5050' #Registry
+    volumes:
+      - gitlab-config:/etc/gitlab
+      - gitlab-logs:/var/logs/gitlab
+      - gitlab-data:/var/opt/gitlab
+
+volumes:
+  gitlab-config:
+  gitlab-logs:
+  gitlab-data:

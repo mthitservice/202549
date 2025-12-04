@@ -1,0 +1,8 @@
+# Basis Image
+FROM nginx:alpine
+
+# Externe Dateien in das Image kopieren
+COPY index.html /usr/share/nginx/html/index.html
+
+# Port veröffentlichen
+EXPOSE 80

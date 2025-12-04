@@ -1,0 +1,9 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment,dataEncipherment
+extendedKeyUsage= serverAuth
+subjectAltName = @alt_names
+[ alt_names ]
+DNS.1 = app01.ith.local
+DNS.2 = app01
+IP.1 = 192.168.101.127

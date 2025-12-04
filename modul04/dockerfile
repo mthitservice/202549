@@ -1,0 +1,14 @@
+# Basis Image
+FROM python:3.11-slim
+WORKDIR /app
+#Kopieren der Python Paketinformation
+COPY req.txt .
+# Python Paketmanager ausführen
+RUN pip install --no-cache-dir -r req.txt
+# App Code kopieren
+COPY . .
+#Startkommando
+CMD ["python","app.py"]
+#publiziere auf Port 5000
+EXPOSE 5000
+
